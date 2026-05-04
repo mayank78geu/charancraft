@@ -20,8 +20,8 @@ const Navbar = () => {
         <div className="nav-links">
           <a href="#shop" className="nav-link">Shop</a>
           <a href="#about" className="nav-link">About</a>
-          <a href="#custom-orders" className="nav-link">Custom Orders</a>
-          <a href="#contact" className="nav-link">Contact</a>
+          <a href="#shop" className="nav-link">Custom Orders</a>
+          <a href="#about" className="nav-link">Contact</a>
         </div>
 
         {/* Mobile Menu Toggle */}
