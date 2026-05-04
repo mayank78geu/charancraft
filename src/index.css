@@ -1,0 +1,136 @@
+:root {
+  /* Colors */
+  --bg-primary: #F5F0FB;
+  --bg-section: #E8DFF5;
+  --color-primary: #7C5FA0;
+  --text-heading: #2A1A3E;
+  --bg-badge: #FCE8F4;
+  --border-color: #C9AEE8;
+  --text-button: #FFFFFF;
+  --text-body: #4a4a4a;
+  --badge-text: #993556;
+  
+  /* Gradients */
+  --hero-gradient: linear-gradient(135deg, #E8DFF5 0%, #F5F0FB 50%, #FCE8F4 100%);
+  --banner-gradient: linear-gradient(90deg, #7C5FA0, #B07CC6);
+  --placeholder-gradient: linear-gradient(135deg, #E8DFF5 0%, #FCE8F4 100%);
+
+  /* Typography */
+  --font-heading: 'Cormorant Garamond', serif;
+  --font-body: 'Jost', sans-serif;
+  
+  /* Shadows */
+  --shadow-soft: 0 4px 20px rgba(124, 95, 160, 0.12);
+  --shadow-hover: 0 8px 30px rgba(124, 95, 160, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-weight: 400;
+  color: var(--text-body);
+  background-color: var(--bg-primary);
+  line-height: 1.6;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  color: var(--text-heading);
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-family: var(--font-body);
+}
+
+/* Animations */
+.fade-up {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Base utility classes */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--text-button);
+  border-radius: 25px;
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+  opacity: 0.95;
+}
+
+.btn-secondary {
+  border: 1.5px solid var(--border-color);
+  color: var(--color-primary);
+  border-radius: 25px;
+  background: transparent;
+}
+
+.btn-secondary:hover {
+  transform: translateY(-2px);
+  background-color: rgba(201, 174, 232, 0.1);
+}
+
+.btn-form {
+  background-color: var(--color-primary);
+  color: var(--text-button);
+  border-radius: 8px;
+  width: 100%;
+}
+
+.btn-form:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-hover);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+}

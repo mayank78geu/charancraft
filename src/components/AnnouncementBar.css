@@ -1,0 +1,13 @@
+.announcement-bar {
+  background: var(--banner-gradient);
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.announcement-bar p {
+  margin: 0;
+}
