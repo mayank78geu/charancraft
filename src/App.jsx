@@ -6,7 +6,6 @@ import TrustBar from './components/TrustBar';
 import ProductGrid from './components/ProductGrid';
 import About from './components/About';
 import InstagramFeed from './components/InstagramFeed';
-import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 
 function App() {
@@ -20,9 +19,6 @@ function App() {
         <ProductGrid />
         <About />
         <InstagramFeed />
-        <div id="contact">
-          <ContactForm />
-        </div>
       </main>
       <Footer />
     </>
